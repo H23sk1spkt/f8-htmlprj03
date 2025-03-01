@@ -11,7 +11,7 @@ body {
 }
 /* commom */
 .container {
-    max-width: calc(100% - 270px);
+    max-width: calc(1440px - 270px);
     margin: 0 auto;
 }
 .btn {
@@ -133,6 +133,9 @@ a{
 .hero .btn {
     padding: 15px 46px;
 }
+.hero .btn:hover {
+    opacity:0.9 ;
+}
 .hero span {
     color: #FFF;
     font-size: 1.8rem;
@@ -140,3 +143,168 @@ a{
     line-height:1.66;
     margin-left: 38px;
 }
+/* services  */
+.services {
+    margin-top: 170px;
+}
+.section-heading {
+    color: #10375C;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 1.2; 
+    letter-spacing: -1px;
+}
+.section-des {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 468px;
+    color: #575F66;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.667; 
+}
+.services-item__heading{
+    display: inline-block;
+    color: #10375C;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.services-item__des {
+    margin-top: 8px;
+    display: inline-block;
+    color: #575F66;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.75;
+}
+.section-row {
+    display: flex;
+    margin-top: 70px;
+}
+.services__image {
+ width: 60%;
+}
+.services__list {
+    width: 40%;
+    margin-top: 35px;
+}
+.services-item {
+    display: flex;
+    padding: 21px;
+    border-radius: 10px;
+    background: #fff;
+    transition: 0.25 ;
+    /* làm cho hiểu ứng chuyển cảnh mượt hơn */
+}
+.services__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    color: #10375c;
+    background: #eff6fd;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.05);
+    transition: 0.25s;
+    margin-right: 19px;
+}
+.services__btn {
+    display: inline-block;
+    padding: 15px 49px;
+    border-radius: 30px;
+    margin-top: 55px;
+    font-size: 18px
+}
+.services-item:hover {
+    box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.05);
+}
+.services-item:hover .services__icon {
+    color: #fff;
+    background: #2E80CE;
+} 
+/* work */ 
+.work {
+    background: #F6FBFF;
+    margin:170px 0;
+    padding: 100px 0 116px;
+} 
+.work__section-heading ,.work__section-des {
+    text-align: left;
+}
+.work__section-des  {
+    margin-top: 18px;
+    display: inline-block;
+    margin-right: auto;
+    /* dùng float :left để đẩy nguyên thẻ p qua bên trái */
+    /* còn text-align là chỉ để cho đoạn văn bản */
+}
+.work__list {
+    margin-top: 70px;
+    /* để cho phần tử ko nhảy lên trên , tôis ưu code */
+    display: flex;
+    gap: 30px;
+}
+.work__item {
+    max-width: 370px;
+    padding: 43px 42px;
+    border-radius: 4px;
+    background: #FFF;
+    border: 16px solid #EAF6FF;
+    border-radius: 4px;
+    
+}
+.work__item:hover {
+    border-color: #2E80CE;
+}
+.work__sub-title {
+    color: #10375C;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 1.38462; /* 138.462% */
+    margin: 18px 0 28px;
+}
+.work__des {
+    color: #575F66;
+    font-size: 16px;
+    font-weight: 300;
+    line-height:1.75;
+    margin-bottom: 18px;
+} 
+.work__item span {
+    color: #2E80CE;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.75;
+}
+/* warranty */
+.warranty__row {
+    display: flex;
+    align-items: center;
+}
+.warranty__img-group , .warranty__title {
+    width: 50%;
+}
+.warranty__img-group {
+    position: relative;
+
+}
+.warranty__img1 {
+    width: 512px ;
+    height: 370px;
+}
+.warranty__img2 {
+    position: absolute;
+    top: 120px;
+    left: 238px;
+    width: 332px;
+    height: 370px;
+}
+.warranty__title {
+    margin-left: 130px;
+    display: inline-block;
+    text-align: left;
+ }
+
